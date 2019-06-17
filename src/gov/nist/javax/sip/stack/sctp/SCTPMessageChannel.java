@@ -73,7 +73,7 @@ final class SCTPMessageChannel extends MessageChannel
         this.channel = SctpChannel.open(dest, 1, 1);
 
         this.channel.setOption(SctpStandardSocketOptions.SCTP_PRIMARY_ADDR,
-                InetSocketAddress.createUnresolved("10.169.102.134", 3003));
+                InetSocketAddress.createUnresolved("10.169.102.134", 47312));
 
         channel.configureBlocking(false);
         this.key = processor.registerChannel(this, channel);
